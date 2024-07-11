@@ -28,6 +28,7 @@ export default defineConfig({
         }),
     ],
     build: {
+        outDir: 'dist', // Ensure this is different from your source directory
         rollupOptions: {
             input: {
                 main: path.resolve(__dirname, 'index.html'),
