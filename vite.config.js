@@ -3,6 +3,8 @@ import { viteStaticCopy } from 'vite-plugin-static-copy'
 import path from 'path'
 
 export default defineConfig({
+
+    base: "/jewellery-viewer/",
     plugins: [
         viteStaticCopy({
             targets: [
