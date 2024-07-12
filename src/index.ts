@@ -62,7 +62,7 @@ async function setupViewer(){
     await viewer.addPlugin(CanvasSnipperPlugin)
 
     // Import and add a GLB file.
-    await viewer.load("./assets/Diamond Ring Example.glb")
+    await viewer.load("./assets/ring.glb")
 
     // Load an environment map if not set in the glb file
     // await viewer.setEnvironmentMap("./assets/environment.hdr");
