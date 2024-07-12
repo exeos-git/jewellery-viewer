@@ -1,1 +1,0 @@
-import{_ as e,a as i,b as s,c as _,d as t}from"./styles-aebcbdb9.js";async function g(){const a=new e({canvas:document.getElementById("webgi-canvas")});await i(a),await a.addPlugin(s),await a.addPlugin(_),await a.addPlugin(t),await a.load("https://github.com/exeos-git/jewellery-viewer/tree/gh-pages/assets/classic-watch.glb")}g();
