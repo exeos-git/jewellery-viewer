@@ -15,6 +15,7 @@ import {
     TemporalAAPlugin,
     AnisotropyPlugin,
     GammaCorrectionPlugin,
+    MaterialConfiguratorPlugin,
 
     addBasePlugins,
     ITexture, TweakpaneUiPlugin, AssetManagerBasicPopupPlugin, CanvasSnipperPlugin,
@@ -58,8 +59,11 @@ async function setupViewer(){
     // Required for downloading files from the UI
     await viewer.addPlugin(FileTransferPlugin)
 
+    await viewer.addPlugin(MaterialConfiguratorPlugin)
+
     // Add more plugins not available in base, like CanvasSnipperPlugin which has helpers to download an image of the canvas.
     await viewer.addPlugin(CanvasSnipperPlugin)
+
 
     // Import and add a GLB file.
     await viewer.load("./assets/final.glb")
